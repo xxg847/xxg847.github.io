@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebGL Bird</title>
+    <style>
+    body {
+        color: #333;
+    }
+    #canvas-wrap {
+        height: 360px;
+        margin: 0 auto;
+        position: relative;
+        width: 640px;
+    }
+    #canvas-wrap canvas {
+        display: block;
+        margin: 0 auto;
+    }
+    #info {
+        height: 100%;
+        left: 2em;
+        position: absolute;
+        top: 1em;
+        width: 100%;
+    }
+    #js-score {
+        color: #966;
+        font-size: 3em;
+    }
+    p {
+        text-align: center;
+        font-size: 125%;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="canvas-wrap">
+        <canvas id="js-canvas"></canvas>
+        <div id="info">
+            <span id="js-score"></span>
+        </div>
+    </div>
+    <p>
+      スペースでゲーム開始、カーソルキーで移動<br>
+      木を避けながらだんごを食べる<br>
+      木にぶかったらスペースキーでやり直し
+    </p>
+    <script src="three.js"></script>
+    <script src="keyboard.js"></script>
+    <script src="sprite.png.js"></script>
+    <script src="glbird.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+#!/bin/sh
+
+FILE=$1
+OBJ='window.ImageUri'
+BASE64='base64 -w0'
+
+# check argument
+if [ -z "$FILE" ]; then
+    echo "Usage: png2js filename"
+    return 1
+fi
+
+# check file eixist
+if [ ! -f "$FILE" ]; then
+    echo "png2js: $FILE: Not such file or directory"
+    return 2;
+fi
+
+printf "$OBJ = $OBJ || {};"
+echo
+
+printf "$OBJ[\"$FILE\"] = \"data:image/png;base64,"
+$BASE64 $FILE
+printf "\";"
+echo

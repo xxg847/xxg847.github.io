@@ -1,0 +1,183 @@
+html {
+  background: #fafafa;
+  color: #333;
+}
+
+body {
+  font: 100% / 1.5 sans-serif;
+  margin: 0 auto 4em;
+  max-width: 100%;
+  width: 37.125em;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  font-weight: normal;
+  padding: 0;
+}
+
+h1 {
+  margin: .5em 0 0;
+}
+
+h2 {
+  margin: .667em 0 0;
+}
+
+h3 {
+  margin: .855em 0 0;
+}
+
+p {
+  margin: 0 0 0;
+  padding: 1em 0 0;
+}
+
+ul,
+ol {
+  margin: 1em 0 0 0;
+  padding: 0 0 0 1.5em;
+}
+
+ul {
+  list-style: square;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+dl {
+  margin: 1em 0 0;
+  padding: 0;
+}
+
+dd > ul {
+  margin: 0;
+  padding: 0;
+}
+
+dt {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+dd {
+  margin: 0 0 0 1.5em;
+  padding: 0;
+}
+
+blockquote,
+.quotesource {
+  margin: 1em 2em 0;
+}
+
+img {
+  border: none;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font: 1em/normal monospace;
+}
+
+pre {
+  border-left: .25em solid #C173B0;
+  overflow: auto;
+  padding: 1em 0 1em 1.75em;
+}
+
+:link {
+  color: #0645ad;
+}
+
+:visited {
+  color: #0B0080;
+}
+
+:link:active,
+:link:hover,
+:visited:active,
+:visited:hover {
+  text-decoration: none;
+}
+
+.clicklist li {
+  margin: .5em 0 0;
+}
+
+.banner,
+.navigation,
+.contentinfo {
+  margin: 0 1em;
+}
+
+.main {
+  background: #fff;
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 1px .0626em;
+  margin: 0 auto;
+  padding: 0 1em 1em;
+}
+
+.banner {
+  padding: 0.5em 0;
+}
+
+.logo {
+  color: #0645ad;
+  font-size: 150%;
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+:link.logo:hover,
+:visited.logo:hover {
+  text-decoration: underline;
+}
+
+.bread > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bread > ul li {
+  display: inline;
+}
+
+.bread .logo {
+  font-family: sans-serif;
+  font-size: 1em;
+}
+
+.bread > ul li + li {
+    border-left: 1px solid #E8B7D7;
+    margin-left: .5em;
+    padding-left: .5em;
+}
+
+.a-back:before {
+  content: "\25C0  ";
+}
+
+.contentinfo a {
+  color: inherit;
+}
+
+@media screen and (max-width: 38em) {
+  .main {
+    border-left: none;
+    border-right: none;
+  }
+}
