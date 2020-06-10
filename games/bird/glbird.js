@@ -151,7 +151,7 @@ window.GlBird = {};
         if (mode === "Title" || mode === "Miss") {
             if (keyState.Space) { // キーが押された
                 // モードをゲームプレイ中にして処理中断
-                return Game.make("Play", 0, score, Bird.initialize(), []);
+                return Game.make("Play", 0, 0, Bird.initialize(), []);
             }
             // モードそのままで処理中断
             return Game.make(mode, cycle + 1, score, bird, itemList);
